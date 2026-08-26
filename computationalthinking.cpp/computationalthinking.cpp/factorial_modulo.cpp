@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 #include<iostream>
 
 using namespace std;
 
 int main(){
      int  n;
-   int n1=1;
+   long long n1=1;
     cout<<"Enter the value of n"<<endl;
     cin>>n;
    for(int i=1; i<=n;i++){
@@ -15,6 +14,3 @@ int main(){
     cout<<n1;
     return 0;
 }
-=======
-cout << "-----------------------------------" << endl;
->>>>>>> 093e21eabdc0afada7b95afbf7f3380416aaed6c

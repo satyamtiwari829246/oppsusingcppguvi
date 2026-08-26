@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include<iostream>
 
 using namespace std;
@@ -15,6 +14,3 @@ int main(){
     cout<<n1;
     return 0;
 }
-=======
-cout << "-----------------------------------" << endl;
->>>>>>> 093e21eabdc0afada7b95afbf7f3380416aaed6c
