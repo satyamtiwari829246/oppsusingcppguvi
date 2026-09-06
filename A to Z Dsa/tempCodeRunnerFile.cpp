@@ -1,1 +1,1 @@
-cout<<f(no,arr,n);
+cout<<"Least occurs:"<<arr[lower]<<endl;
