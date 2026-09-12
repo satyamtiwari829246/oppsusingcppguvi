@@ -1,1 +1,1 @@
-cout<<"Least occurs:"<<arr[lower]<<endl;
+cout<<mask<<endl;
