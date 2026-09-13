@@ -2,9 +2,9 @@
 using namespace std;
 
 int main(){
-    int arr[] ={32,54,56,34,25,65,87,56,43,87};
+    vector<int> arr()={32,54,56,34,25,56,43,87};
    int pos,value;
-  int n=10;
+  int n=8;
    cout<<"Enter the position of insertion: "<<endl;
    cin>>pos;
 
