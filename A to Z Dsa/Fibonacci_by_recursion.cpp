@@ -10,7 +10,12 @@ int fibonacci(int n){
 }
 
 int main(){
-    cout<<fibonacci(10);
+    int n;
+    cout<<"enter the number of terms:"<<endl;
+    cin>>n; 
+    for(int i=0;i<n;i++){
+        cout<<fibonacci(i)<<" ";
+    }
     return 0;
 }
 
