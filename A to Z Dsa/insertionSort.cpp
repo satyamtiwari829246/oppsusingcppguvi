@@ -24,6 +24,15 @@ void insertionSort2(int arr[],int n){  // O(n^2)
     }
 }
 
+//method 3
+ void insertionSort3(int arr[], int n){
+    
+    for(int i=1;i<n;++i){
+        int temp= arr[i];
+        if(arr[i]>arr[])
+    }
+ }
+
 int main(){
     int arr[]={2,4,1,5,3};
     int n=5;
