@@ -27,7 +27,7 @@ void insertAttail(node* &head,int val){
         temp= temp->next;
        
     }
-   temp->next= new node;
+   temp->next= n;
     
 }
 
@@ -35,16 +35,56 @@ void insertAttail(node* &head,int val){
 void insertAtaposition(node* &head ,int val,int pos){
     node* temp = head;
     node* n = new node(val);
-    int n=0
-    while (n!=pos)
-    {
-        temp= temp->next;
-        n++;
+    if(pos==1){
+        n->next= head;
+      head = n;
+      return;
+
     }
-    
-    
+    for(int i=0;i=pos-1 && temp->next!=NULL;i++){
+        temp=temp->next;
+    }
+    n->next = temp->next;
+    temp->next = n;
 }
 
+//reversing the single linklist
+void reversingThelinklist(node* &head){
+     node* prev = NULL;
+     node* curr = head;
+     node* nextNode = NULL;
+
+     while(curr!=NULL){
+        nextNode = curr->next;
+        curr->next = prev;
+        prev = curr;
+        curr=nextNode;
+     }
+
+     prev = head;
+
+}
+
+//Deletion from begining
+void deleteBegining(node* head){
+    node* temp = head;
+    head= temp->next;
+    temp->next= NULL;
+    return head;
+}
+
+// Deletion from specific position
+
+void deletionFromend(node* head){
+    node* temp = head;
+    while((temp->next)->next!=NULL){
+        temp= temp->next;
+    }
+    node* toDelete = temp->next;
+    temp->next = NULL;
+    delete toDelete;
+}  
+
 int main(){
-    int 
+    
 }
