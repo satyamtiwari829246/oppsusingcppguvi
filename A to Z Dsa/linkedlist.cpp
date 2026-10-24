@@ -73,7 +73,7 @@ void deleteBegining(node* head){
     return head;
 }
 
-// Deletion from specific position
+// Deletion from end position
 
 void deletionFromend(node* head){
     node* temp = head;
@@ -84,6 +84,18 @@ void deletionFromend(node* head){
     temp->next = NULL;
     delete toDelete;
 }  
+
+//deleting from specific position
+void deletionFromSpecificPosition(node* head,int pos){
+    node* temp = head;
+    for(int i=0;i<pos-1;i++){
+        temp= temp->next;
+    }
+    node* toDelete = temp->next;
+    temp->next = (temp->next)->next;
+    delete toDelete;
+}
+
 
 int main(){
     

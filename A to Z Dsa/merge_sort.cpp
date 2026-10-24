@@ -9,7 +9,7 @@ void merge(int arr[],int low,int mid,int high){
     int right=mid+1;
     
      vector<int>temp;
-     while(left<=mid&&right<=high){
+     while(left<=mid && right<=high){
         if(arr[left]<=arr[right]){
             temp.push_back(arr[left]);
             left++;
@@ -55,3 +55,9 @@ int main(){
     }
     return 0;
 }
+
+
+
+
+
+
